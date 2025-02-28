@@ -1,0 +1,62 @@
+[
+  {
+    "id": "6289673462138@s.whatsapp.net",
+    "name": "Kayzu Hosting",
+    "attackdigi": 0,
+    "DarahOrang": 100,
+    "tp": 0,
+    "bits": 40,
+    "kenyang": 8,
+    "happy": 0,
+    "digivice": false,
+    "recoverplug": 0,
+    "apajob": false,
+    "job": "Nelayan",
+    "hitcmd": 0
+  },
+  {
+    "id": "628979847953@s.whatsapp.net",
+    "name": "Yanto",
+    "attackdigi": 0,
+    "DarahOrang": 100,
+    "tp": 0,
+    "bits": 0,
+    "kenyang": 0,
+    "happy": 0,
+    "digivice": false,
+    "recoverplug": 0,
+    "apajob": false,
+    "job": "nganggur",
+    "hitcmd": 0
+  },
+  {
+    "id": "6282285732572@s.whatsapp.net",
+    "name": "S",
+    "attackdigi": 0,
+    "DarahOrang": 100,
+    "tp": 0,
+    "bits": 0,
+    "kenyang": 0,
+    "happy": 0,
+    "digivice": false,
+    "recoverplug": 0,
+    "apajob": false,
+    "job": "nganggur",
+    "hitcmd": 0
+  },
+  {
+    "id": "6282286191909@s.whatsapp.net",
+    "name": "_",
+    "attackdigi": 0,
+    "DarahOrang": 100,
+    "tp": 0,
+    "bits": 0,
+    "kenyang": 0,
+    "happy": 0,
+    "digivice": false,
+    "recoverplug": 0,
+    "apajob": false,
+    "job": "nganggur",
+    "hitcmd": 0
+  }
+]

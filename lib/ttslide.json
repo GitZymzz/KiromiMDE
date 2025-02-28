@@ -1,0 +1,41 @@
+const axios = require('axios');
+const cheerio = require('cheerio');
+
+async function ttslide(text) {
+    try {
+        // Mengambil data dari URL
+        let response = await axios.get(`https://dlpanda.com/id?url=${encodeURIComponent(text)}&token=G7eRpMaa`);
+        const html = response.data;
+
+        // Memuat data HTML ke cheerio
+        const $ = cheerio.load(html);
+        let imgSrc = [];
+
+        // Menemukan semua elemen <img> dalam div tertentu
+        $('div.col-md-12 > img').each((index, element) => {
+            imgSrc.push($(element).attr('src'));
+        });
+
+        // Membuat array hasil
+        return {
+            creator: 'Jikarinka',
+            imgSrc: imgSrc
+        };
+
+    } catch (error) {
+        console.error('Error:', error.message);
+        return {
+            creator: 'Jikarinka',
+            imgSrc: [],
+            error: 'Gagal mengambil data. Pastikan URL benar atau server dapat diakses.'
+        };
+    }
+}
+
+// Memanggil fungsi untuk uji coba
+(async () => {
+    const result = await ttslide(`https://vt.tiktok.com/ZSNyY9McY/`);
+    console.log(result);
+})();
+
+module.exports = { ttslide }
